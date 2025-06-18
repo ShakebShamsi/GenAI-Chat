@@ -3,9 +3,10 @@ import Sidebar from "./components/sidebar/Sidebar"
 
 const App = () => {
   return (
-    <><Sidebar/>
-    <Main/>
-    </>
+   <>
+    <Sidebar />
+    <Main />
+   </>
   )
 }
 
