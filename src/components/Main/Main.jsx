@@ -42,7 +42,7 @@ const Main = () => {
                  </div>
               </div>
               <p className="bottom-info">
-              Gemini can make mistakes, so double-check it.
+              Gemini can make mistakes, so double-check it
               </p>
            </div>
         </div>

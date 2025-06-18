@@ -22,14 +22,14 @@
    margin: auto; 
    width: 90%;  
    margin: 0 auto;
-   padding: 20px;
+   padding: 1px;
 } 
 .main .greet{
    margin: 50px 0px;
    font-size: 56px;
    color: #c4c7c5;
    font-weight: 500;
-   padding: 20px;
+   padding-left: 20px;
 }
 .main .greet span{
    background:-webkit-linear-gradient(16deg, #4b90ff, #ff5546);
@@ -40,7 +40,9 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
    gap: 15px;
-   padding: 20px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px;
 }
 .main .card{
    height: 200px;
