@@ -94,11 +94,18 @@
    align-items: center;
    gap: 15px;
 }
-.main .bottom-info{
-   font-size: 13px;
+.main .bottom-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 12px;
    margin: 15px auto;
-   text-align: center;
    font-weight: 300;
+}
+.bottom-info>span{
+   font-size: 13px;
+   font-weight: 400;
 }
 .result{
    padding: 0px 5%;

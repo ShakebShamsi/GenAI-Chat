@@ -125,9 +125,10 @@ const Main = () => {
 					</div>
 					<div className="bottom-info">
 						<p>
-							Gemini may display inaccurate info, including about people, so
-							double-check its responses. Your privacy & Gemini Apps
-						</p>
+                  GenAI Chat may display inaccurate info, including about people, so
+                     double-check its responses.
+                  </p>
+                  <span>Made with ❤️ by <a href="https://shakeb.onrender.com" target="_blank">Shakeb Shamsi</a></span>
 					</div>
 				</div>
 			</div>
