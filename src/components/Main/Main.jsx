@@ -38,7 +38,7 @@ const Main = () => {
 									handleCardClick("Suggest Some Place To Visit In India.")
 								}
 							>
-								<p>Suggest Some Place To Visit In India.</p>
+								<p>Suggest Some Place To Visit In Bangalore.</p>
 								<img src={assets.compass_icon} alt="" />
 							</div>
 							<div
@@ -49,7 +49,7 @@ const Main = () => {
 									)
 								}
 							>
-								<p>Explain the process of photosynthesis in simple terms </p>
+								<p>What is JSX in React? </p>
 								<img src={assets.message_icon} alt="" />
 							</div>
 							<div
@@ -58,7 +58,7 @@ const Main = () => {
 									handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")
 								}
 							>
-								<p>How do you create a responsive navbar using CSS and JavaScript?</p>
+								<p>How can you implement a mobile-friendly navbar using CSS and JavaScript?</p>
 								<img src={assets.bulb_icon} alt="" />
 							</div>
 							<div
@@ -69,7 +69,7 @@ const Main = () => {
 									);
 								}}
 							>
-								<p>What are some essential skills for becoming a front-end developer?</p>
+								<p>Which core skills should one focus on to build a strong front-end development career?</p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
