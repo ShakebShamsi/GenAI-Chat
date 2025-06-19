@@ -35,41 +35,41 @@ const Main = () => {
 							<div
 								className="card"
 								onClick={() =>
-									handleCardClick("Suggest Some Place To Visit In India.")
+									handleCardClick("Top 5 Place To Visit In Bangalore.")
 								}
 							>
-								<p>Suggest Some Place To Visit In Bangalore.</p>
+								<p>Top 5 Place To Visit In Bangalore.</p>
 								<img src={assets.compass_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() =>
 									handleCardClick(
-										"Explain the process of photosynthesis in simple terms"
+										"Explain the process of photosynthesis in short"
 									)
 								}
 							>
-								<p>What is JSX in React? </p>
+								<p>Explain the process of photosynthesis in short</p>
 								<img src={assets.message_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() =>
-									handleCardClick("How do you create a responsive navbar using CSS and JavaScript?")
+									handleCardClick("What are the key responsibilities of a frontend engineer in short?")
 								}
 							>
-								<p>How can you implement a mobile-friendly navbar using CSS and JavaScript?</p>
+								<p>What are the key responsibilities of a frontend engineer in short?</p>
 								<img src={assets.bulb_icon} alt="" />
 							</div>
 							<div
 								className="card"
 								onClick={() => {
 									handleCardClick(
-										"What are some essential skills for becoming a front-end developer?"
+										"What is Gen Ai, will it replace human, in short?"
 									);
 								}}
 							>
-								<p>Which core skills should one focus on to build a strong front-end development career?</p>
+								<p>What is Gen Ai, will it replace human, in short?</p>
 								<img src={assets.code_icon} alt="" />
 							</div>
 						</div>
