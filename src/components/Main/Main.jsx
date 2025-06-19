@@ -29,7 +29,7 @@ const Main = () => {
 							<p>
 								<span>Hello, Dev! </span>
 							</p>
-							<p>How Can i Help You Today?</p>
+							<p>How Can I Help You Today?</p>
 						</div>
 						<div className="cards">
 							<div
