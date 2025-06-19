@@ -102,7 +102,8 @@ const Main = () => {
                      }}
                      onKeyDown={(e) => {
                         if (e.key === "Enter") {
-                            onSent();
+                           onSent();
+                           setInput("")
                         }
                     }}
 							value={input}
@@ -116,7 +117,8 @@ const Main = () => {
 								src={assets.send_icon}
 								alt=""
 								onClick={() => {
-									onSent();
+                           onSent() &&
+                           setInput("")
                         }}
 							/>
 						</div>
