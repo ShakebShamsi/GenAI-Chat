@@ -11,7 +11,7 @@ const Sidebar = () => {
 		await onSent(prompt);
 	};
 	return (
-		<div className="sidebar">
+      <div className={`sidebar${extended ? " extended" : ""}`}>
 			<div className="top">
 				<img
 					src={assets.menu_icon}
@@ -25,7 +25,7 @@ const Sidebar = () => {
 					<img src={assets.plus_icon} alt="" onClick={()=>{
                         newChat()
                     }} />
-					{extended ? <p>New Chat</p> : null}
+					{extended ?  <p>New Chat</p> : null}
 				</div>
 				{extended ? (
 					<div className="recent">

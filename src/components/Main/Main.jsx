@@ -77,14 +77,13 @@ const Main = () => {
 				) : (
 					<div className="result">
 						<div className="result-title">
-							<img src={assets.user} alt="" />
+							<img src={assets.user_icon} alt="" className="user-icon"/>
 							<p>{recentPrompt}</p>
 						</div>
 						<div className="result-data">
-							<img src={assets.gemini_icon} alt="" />
+							<img src={assets.favicon} alt="" width="7px" className="bot-icon"/>
 							{loading ? (
 								<div className="loader">
-									<hr />
 									<hr />
 									<hr />
 								</div>
@@ -100,7 +99,12 @@ const Main = () => {
 						<input
 							onChange={(e) => {
 								setInput(e.target.value);
-							}}
+                     }}
+                     onKeyDown={(e) => {
+                        if (e.key === "Enter") {
+                            onSent();
+                        }
+                    }}
 							value={input}
 							type="text"
 							placeholder="Enter the Prompt Here"
@@ -113,7 +117,7 @@ const Main = () => {
 								alt=""
 								onClick={() => {
 									onSent();
-								}}
+                        }}
 							/>
 						</div>
 					</div>
