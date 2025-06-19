@@ -1,14 +1,35 @@
-![Gemini-2.5 Flash](https://github.com/user-attachments/assets/342b8616-1edb-4521-885c-d486b550f7d6)
+# 🔮 Gemini 2.5 Flash Clone (React.js)
 
+A sleek, responsive clone of Google's **Gemini 2.5 Flash** UI – built using **React.js**.  
+This project recreates the frontend layout of the Gemini AI interface, complete with prompt cards, chat UI, and modern design principles.
 
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- 🔥 Gemini Flash-inspired UI
+- ⚛️ Built using React functional components
+- 📱 Fully responsive layout for all screen sizes
+- 🧠 Prompt-based quick actions
+- 🌙 Clean dark-mode themed styling
+- 🎯 Context API for global state management
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js**
+- **CSS3** (with Flexbox)
+- **HTML5**
+- (Optional) Add your own LLM backend for full-stack functionality
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots or a demo GIF here  
+> Example:
+> ![Gemini-2.5 Flash](https://github.com/user-attachments/assets/342b8616-1edb-4521-885c-d486b550f7d6)
+
+---
+
