@@ -1,30 +1,43 @@
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { Context } from "../../context/Context";
 const Sidebar = () => {
 	const [extended, setExtended] = useState(false);
-	const { onSent, prevPrompts, setRecentPrompt, newChat } = useContext(Context);
+   const { onSent, prevPrompts, setRecentPrompt, newChat, showSidebar, setShowSidebar } = useContext(Context);
+
+   useEffect(() => {
+      if (showSidebar) {
+         setExtended(true);
+      }
+   }, [showSidebar]);
 
 	const loadPreviousPrompt = async (prompt) => {
 		setRecentPrompt(prompt);
 		await onSent(prompt);
 	};
 	return (
-      <div className={`sidebar${extended ? " extended" : ""}`}>
+      <div className={`sidebar${extended ? " extended" : ""} ${showSidebar ? "mobile-show" : ""}`}>
 			<div className="top">
 				<img
 					src={assets.menu_icon}
 					className="menu"
 					alt="menu-icon"
 					onClick={() => {
-						setExtended((prev) => !prev);
+                  if(window.innerWidth<=600){
+                     setShowSidebar(false);
+                  }else{
+						   setExtended((prev) => !prev);
+                  }
 					}}
 				/>
-				<div className="new-chat">
-					<img src={assets.plus_icon} alt="" onClick={()=>{
-                        newChat()
-                    }} />
+				<div className="new-chat" onClick={()=>{
+                  newChat();
+                  if(window.innerWidth<=600){
+                     setShowSidebar(false);
+                  }
+               }}>
+					<img src={assets.plus_icon} alt="" />
 					{extended ?  <p>New Chat</p> : null}
 				</div>
 				{extended ? (
@@ -33,7 +46,10 @@ const Sidebar = () => {
 						{prevPrompts.map((item, index) => {
 							return (
 								<div onClick={()=>{
-                                    loadPreviousPrompt(item)
+                                    loadPreviousPrompt(item);
+                                    if(window.innerWidth<=600){
+                                       setShowSidebar(false);
+                                    }
                                 }} className="recent-entry">
 									<img src={assets.message_icon} alt="" />
 									<p>{item.slice(0, 18)}...</p>

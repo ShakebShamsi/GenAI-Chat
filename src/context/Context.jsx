@@ -10,6 +10,7 @@ const ContextProvider = (props) => {
 	const [showResults, setShowResults] = useState(false);
 	const [loading, setLoading] = useState(false);
 	const [resultData, setResultData] = useState("");
+   const [showSidebar, setShowSidebar] = useState(false);
 
 	const delayPara = (index, nextWord) => {
 		setTimeout(function () {
@@ -71,6 +72,8 @@ const ContextProvider = (props) => {
 		loading,
 		resultData,
 		newChat,
+      showSidebar,
+      setShowSidebar
 	};
 
 	return (

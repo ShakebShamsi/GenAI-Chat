@@ -11,6 +11,7 @@ const Main = () => {
 		resultData,
 		setInput,
 		input,
+      setShowSidebar
 	} = useContext(Context);
 
     const handleCardClick = (promptText) => {
@@ -19,6 +20,7 @@ const Main = () => {
 	return (
 		<div className="main">
 			<div className="nav">
+            <img src={assets.menu_icon} alt="" className="menu-icon" onClick={()=>setShowSidebar(true)}/>
 				<p>GenAI Chat</p>
 				<img src={assets.user_icon} alt="" />
 			</div>
